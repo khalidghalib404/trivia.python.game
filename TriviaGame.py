@@ -29,8 +29,10 @@ def python_trivia_game():
     total_questions = 10;
     score = 0;
     
-    selected-questions = random.sample(question_list, total_questions );
-    print(selected-questions);
+    selected_questions = random.sample(question_list, total_questions );
+    for idx , question in enumerate(selected_questions):
+        print(f"{idx + 1}. {question}")
+        user_answer = input("your answer: ").lower()
     
     
 python_trivia_game()
