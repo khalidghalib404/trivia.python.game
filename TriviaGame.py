@@ -14,6 +14,8 @@ questions = {
     "What is a class?": "A blueprint for creating objects",
     "What is an object?": "An instance of a class",
     "What is indentation in Python?": "Spacing used to define code blocks",
+    "What is a module?": "A file containing Python code that can be imported",
+    "What is a package?": "A collection of modules",
 }
 
 
@@ -34,6 +36,8 @@ def python_trivia_game():
 
         else:
             print(f"Wrong. The correct answer is :{correct_answer}.\n  ")
+            print(f"Your current score is: {score}\n")
+           
 
 
 python_trivia_game()
