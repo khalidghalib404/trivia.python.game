@@ -203,3 +203,4 @@ def increment(number, another, by=1):
 print(increment(2, 5))
 print(increment(2, 5, 3))
 print(increment(2, 5, by=3))
+print(increment(2, 5, by=3))
