@@ -16,6 +16,7 @@ questions = {
     "What is indentation in Python?": "Spacing used to define code blocks",
     "What is a module?": "A file containing Python code that can be imported",
     "What is a package?": "A collection of modules",
+    "What is a lambda function?": "An anonymous function expressed as a single statement",
 }
 
 

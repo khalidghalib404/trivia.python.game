@@ -11,6 +11,7 @@
 
 import random
 import string
+import sys
 
 
 def generate_password():
@@ -21,6 +22,11 @@ def generate_password():
         "include special characters ? (yes/no): ").strip().lower()
     include_digits = input(
         "include digits ? (yes/no): ").strip().lower()
+    if length < 1:
+        print("password length must be at least 1")
+        sys.exit(2.1)
+        
+     
 
 
 generate_password()
