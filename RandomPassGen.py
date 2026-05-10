@@ -25,6 +25,7 @@ def generate_password():
     if length < 1:
         print("password length must be at least 1")
         sys.exit(2.1)
+        print("the.")
         
      
 
