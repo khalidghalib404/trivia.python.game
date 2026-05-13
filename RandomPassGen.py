@@ -25,8 +25,17 @@ def generate_password():
     if length < 1:
         print("password length must be at least 1")
         sys.exit(2.1)
-        print("password length must be at least 4")
-         print("password length must be at least 4")
+      
+      
+      
+    if length < 4:
+      print("password length must be at least 4 characters.")
+      return
+      
+     
+    lower = string.ascii_lowercase
+    print(lower)
+                  
         
         
      
