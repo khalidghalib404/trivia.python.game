@@ -38,7 +38,7 @@ def generate_password():
                   
         
         
-     
+    print("show the num")
 
 
 generate_password()
