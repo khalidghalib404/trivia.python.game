@@ -30,11 +30,12 @@ def generate_password():
       
     if length < 4:
       print("password length must be at least 4 characters.")
-      print("password length must be at least 3 characters.")
+
       return
       
      
     lower = string.ascii_lowercase
+    uppercase = string.ascii_uppercase
     print(lower)
                   
         
