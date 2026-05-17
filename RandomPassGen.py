@@ -35,12 +35,24 @@ def generate_password():
       
      
     lower = string.ascii_lowercase
-    uppercase = string.ascii_uppercase
-    print(lower)
+    uppercase = string.ascii_uppercase if include_uppercase == "yes" else  ""
+    special = string.punctuation if include_special == "yes" else  ""
+    digits = string.digits if include_special == "yes" else  ""
+    all_characters = lower + uppercase + special + digits 
+    
+    required_characters = []
+    if include_uppercase == "yes":
+        required_characters.append(random.choice(uppercase))
+    if include_special == "yes":
+        required_characters.append(random.choice(special))
+    if include_digits == "yes":
+        required_characters.append(random.choice(digits))
+
+    print(all_characters)
                   
         
         
-    print("show the num")
+  
 
 
 generate_password()
