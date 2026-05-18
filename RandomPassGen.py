@@ -49,7 +49,8 @@ def generate_password():
         required_characters.append(random.choice(digits))
 
     print(all_characters)
-                  
+    remaining_length = length - len(required_characters)
+    password = required_characters + random.choices(all_characters, k=remaining_length)
         
         
   
