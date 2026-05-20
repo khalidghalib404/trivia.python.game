@@ -56,12 +56,12 @@ def generate_password():
        character = random.choice(all_characters)
        password.append(character)
        
-       random.shuffle(password)
        
-       print(password)
+    random.shuffle(password)   
+    print(password)
         
-        
-  
+ str_password = ''.join(password)
+ return str_password
 
-
-generate_password()
+password = generate_password()
+print(password)
