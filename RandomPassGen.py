@@ -60,8 +60,8 @@ def generate_password():
     random.shuffle(password)   
     print(password)
         
- str_password = ''.join(password)
- return str_password
+    str_password = ''.join(password)
+      return str_password
 
 password = generate_password()
 print(password)
