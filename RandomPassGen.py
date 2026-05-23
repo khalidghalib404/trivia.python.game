@@ -65,3 +65,4 @@ def generate_password():
 
 password = generate_password()
 print(password)
+print("Generated password:", password)
