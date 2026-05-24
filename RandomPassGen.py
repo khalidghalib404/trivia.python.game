@@ -61,8 +61,7 @@ def generate_password():
     print(password)
         
     str_password = ''.join(password)
-      return str_password
+    return str_password
 
 password = generate_password()
 print(password)
-print("Generated password:", password)
