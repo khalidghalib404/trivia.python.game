@@ -10,8 +10,12 @@ import json
 file_name = "todo_list.json"
 
 def load_tasks():
-    with open(file_name, "r") as file:
+    try:
+     with open(file_name, "r") as file:
         return json.load(file)
+    except Exception as e:
+     print("Error:", e)
+    return {"tasks": []}
 
 
 def save_tasks():
@@ -28,6 +32,8 @@ def mark_task_complete():
 
 def main():
     tasks = load_tasks()
+    print(tasks)
+    
     
     
     while True:
