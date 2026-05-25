@@ -10,7 +10,8 @@ import json
 file_name = "todo_list.json"
 
 def load_tasks():
-    pass
+    with open(file_name, "r") as file:
+        return json.load(file)
 
 
 def save_tasks():
