@@ -1,4 +1,6 @@
 {
     "tasks": ["hello world "],
-    "completed_tasks": []
+    "completed_tasks": [],
+    "deleted_tasks": []
+
 }
