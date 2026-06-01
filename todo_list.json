@@ -1,8 +1,1 @@
-{
-    "tasks": ["hello world "],
-    "completed_tasks": [],
-    "deleted_tasks": [],
-    "archived_tasks": []
-
-
-}
+{"tasks": ["saved task"]}

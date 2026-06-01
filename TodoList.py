@@ -18,8 +18,14 @@ def load_tasks():
     return {"tasks": []}
 
 
-def save_tasks():
-    pass
+def save_tasks(tasks):
+    
+ try:
+     with open(file_name, "w") as file:
+         json.dump(tasks, file)
+         
+ except:
+    print("Failed to save.")
 
 def view_tasks():
     pass
@@ -31,6 +37,7 @@ def mark_task_complete():
     pass
 
 def main():
+    save_tasks({"tasks": ["saved task"]})
     tasks = load_tasks()
     print(tasks)
     
