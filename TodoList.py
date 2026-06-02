@@ -31,7 +31,10 @@ def view_tasks():
     pass
 
 def create_task():
-    pass
+    description = input("Enter task description: ").strip()
+    if description:
+          tasks["tasks"].append({"description": description, "completed": False})
+    
 
 def mark_task_complete():
     pass
