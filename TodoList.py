@@ -30,7 +30,7 @@ def save_tasks(tasks):
 def view_tasks():
     pass
 
-def create_task():
+def create_task(tasks):
     description = input("Enter task description: ").strip()
     if description:
           tasks["tasks"].append({"description": description, "completed": False})
@@ -40,6 +40,7 @@ def mark_task_complete():
     pass
 
 def main():
+    tasks = load_tasks( {"tasks": []})
     save_tasks({"tasks": ["saved task"]})
     tasks = load_tasks()
     print(tasks)
