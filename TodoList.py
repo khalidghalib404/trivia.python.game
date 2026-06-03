@@ -21,11 +21,13 @@ def load_tasks():
 def save_tasks(tasks):
     
  try:
+     print("saving:", tasks)
      with open(file_name, "w") as file:
-         json.dump(tasks, file)
+         json.dump(tasks, file, indent=4)
+         print("Tasks saved successfully.")
          
- except:
-    print("Failed to save.")
+ except Exception as e:
+    print("Failed to save:", e)
 
 def view_tasks():
     pass
@@ -34,16 +36,21 @@ def create_task(tasks):
     description = input("Enter task description: ").strip()
     if description:
           tasks["tasks"].append({"description": description, "completed": False})
+          save_tasks(tasks)
+          print(tasks)
+          print("Task added successfully.")
+    else:
+        print("Task description cannot be empty.")
     
 
 def mark_task_complete():
     pass
 
 def main():
-    tasks = load_tasks( {"tasks": []})
-    save_tasks({"tasks": ["saved task"]})
-    tasks = load_tasks()
-    print(tasks)
+    tasks = load_tasks( )
+    # save_tasks({"tasks": ["saved task"]})
+    # tasks = load_tasks()
+    # print(tasks)
     
     
     
