@@ -75,6 +75,7 @@ def main():
         else:
             print("Invalid choice. Please try again.")
             print("Invalid choice. Please try again.")
+            print("Invalid choice. Please try again.")
             
      
 main()
