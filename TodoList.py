@@ -60,7 +60,7 @@ def main():
         print("2. Add Task")
         print("3. Mark Task as Complete")
         print("4. Exit")
-        
+        print("5. Reset")
         choice = input("Enter your choice: ").strip()
         
         if choice == "1":
