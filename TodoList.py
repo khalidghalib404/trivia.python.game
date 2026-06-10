@@ -41,6 +41,7 @@ def create_task(tasks):
           print("Task added successfully.")
     else:
         print("Task description cannot be empty.")
+        print("Task description cannot be empty.")
     
 
 def mark_task_complete():
