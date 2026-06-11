@@ -9,6 +9,7 @@ import json
  
 file_name = "todo_list.json"
 
+
 def load_tasks():
     try:
      with open(file_name, "r") as file:
@@ -42,7 +43,7 @@ def create_task(tasks):
     else:
         print("Task description cannot be empty.")
         print("Task description cannot be empty.")
-    
+        
 
 def mark_task_complete():
     pass
