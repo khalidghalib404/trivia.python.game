@@ -35,7 +35,7 @@ def view_tasks():
     pass
 
 def create_task(tasks):
-    description = input("Enter task description: ").strip()
+    description = input("Enter task description:: ").strip()
     if description:
           tasks["tasks"].append({"description": description, "completed": False})
           save_tasks(tasks)
