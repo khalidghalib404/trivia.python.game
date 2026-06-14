@@ -40,7 +40,7 @@ def create_task(tasks):
           tasks["tasks"].append({"description": description, "completed": False})
           save_tasks(tasks)
           print(tasks)
-          print("Task added successfully.")
+          print("Task added successfully..")
     else:
         print("Task description cannot be empty.")
         print("Task description cannot be empty.")
