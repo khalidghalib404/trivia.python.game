@@ -48,6 +48,7 @@ def create_task(tasks):
 
 def mark_task_complete():
     pass
+    print("marking task as complete...")
 
 def main():
     tasks = load_tasks( )
