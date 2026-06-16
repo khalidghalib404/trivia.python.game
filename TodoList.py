@@ -52,9 +52,9 @@ def mark_task_complete():
 
 def main():
     tasks = load_tasks( )
-    # save_tasks({"tasks": ["saved task"]})
-    # tasks = load_tasks()
-    # print(tasks)
+    save_tasks({"tasks": ["saved task"]})
+    tasks = load_tasks()
+    print(tasks)
     
     
     
