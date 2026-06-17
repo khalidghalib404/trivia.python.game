@@ -55,6 +55,7 @@ def main():
     save_tasks({"tasks": ["saved task"]})
     tasks = load_tasks()
     print(tasks)
+    print("tasks loaded successfully.")
     
     
     
@@ -65,8 +66,9 @@ def main():
         print("3. Mark Task as Complete")
         print("4. Exit")
         print("5. Reset")
-        choice = input("Enter your choice: ").strip()
         
+        choice = input("Enter your choice: ").strip()
+        choice = choice.strip()
         if choice == "1":
             view_tasks(tasks)
         elif choice == "2":
