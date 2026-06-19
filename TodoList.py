@@ -18,7 +18,7 @@ def load_tasks():
      print("Error:", e)
     return {"tasks": []}
     print("tasks loaded successfully.")
-
+    
 
 def save_tasks(tasks):
     
