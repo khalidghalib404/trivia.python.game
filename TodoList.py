@@ -17,7 +17,9 @@ def load_tasks():
     except Exception as e:
      print("Error:", e)
     return {"tasks": []}
-    print("tasks loaded successfully."  )
+    print("tasks loaded successfully.")
+    print("tasks loaded successfully.")
+
 
 
 def save_tasks(tasks):
