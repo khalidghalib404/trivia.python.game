@@ -32,10 +32,10 @@ def save_tasks(tasks):
          
  except Exception as e:
     print("Failed to save:", e)
-
+ 
 def view_tasks():
     pass
-
+   
 def create_task(tasks):
     description = input("Enter task description:: ").strip()
     if description:
@@ -46,8 +46,8 @@ def create_task(tasks):
     else:
         print("Task description cannot be empty.")
         print("Task description cannot be empty.")
-        
-
+        print("Task description cannot be empty.")
+   
 def mark_task_complete():
     pass
     print("marking task as complete...")
