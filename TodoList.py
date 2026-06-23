@@ -80,6 +80,8 @@ def main():
         elif choice == "4":
             print("good bye")
             break
+        elif choice == "5":
+            print("retry")
         else:
             print("Invalid choice. Please try again.")
             print("Invalid choice. Please try again.")
