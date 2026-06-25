@@ -23,7 +23,7 @@ questions = {
 def python_trivia_game():
     question_list = list(questions.keys())
     total_questions = 10
-    score = 0
+    score = 1
 
     selected_questions = random.sample(question_list, total_questions)
     for idx, question in enumerate(selected_questions):
