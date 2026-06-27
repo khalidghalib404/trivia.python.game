@@ -36,7 +36,7 @@ def python_trivia_game():
             score += 2
 
         else:
-            print(f"Wrong. The correct answer is: {correct_answer}.\n")
+            print(f"Wrong The correct answer is: {correct_answer}.\n")
         print(f"Game Over! your final score is: {score}/{total_questions}")
 
 
