@@ -28,7 +28,7 @@ def python_trivia_game():
     selected_questions = random.sample(question_list, total_questions)
     for idx, question in enumerate(selected_questions):
         print(f"{idx + 1}. {question}")
-        user_answer = input("your answer: ").lower()
+        user_answer = input("your answer1: ").lower()
         correct_answer = questions[question]
 
         if user_answer == correct_answer.lower():
@@ -39,7 +39,7 @@ def python_trivia_game():
             print(f"Wrong The correct answer is: {correct_answer}.\n")
     print(f"Game Over! your final score is: {score}/{total_questions}")
     print("Thanks for playing!")
-
-
+    
+    
 python_trivia_game()
  
