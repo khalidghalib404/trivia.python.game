@@ -33,7 +33,7 @@ def python_trivia_game():
 
         if user_answer == correct_answer.lower():
             print("CORRECT!\n")
-            score += 2
+            score += 3
 
         else:
             print(f"Wrong The correct answer is: {correct_answer}.\n")
