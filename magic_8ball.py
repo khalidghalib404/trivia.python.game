@@ -10,7 +10,7 @@ def magic_8ball():
         "No ❌", "Very doubtful 😔", "Not in your favor 🎲"
     ]
     
-    print("\n" + "="*40)
+    print("\n" + "="*45)
     print("    🎱 MAGIC 8-BALL 🎱")
     print("="*40)
     

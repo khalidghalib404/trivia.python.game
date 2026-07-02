@@ -13,7 +13,7 @@ COLORS = {
     'bold': '\033[1m'
 }
 
-MAGIC_SYMBOLS = ["✨", "🔮", "⭐", "🌙", "☄️", "🌟", "⚡", "🍀"]
+MAGIC_SYMBOLS = ["*", "~", "^", "!", "@", "#", "&", "%"]
 
 def print_magic(text, color='cyan', delay=0.03):
     for char in text:
@@ -34,7 +34,7 @@ def print_fortune(fortune, category):
         time.sleep(0.3)
 
 def get_user_mood():
-    print_magic("\n✨ How are you feeling today? ✨\n", 'purple')
+    print_magic("\n*** How are you feeling today? ***\n", 'purple')
     moods = {
         '1': 'happy', '2': 'curious', '3': 'adventurous', 
         '4': 'contemplative', '5': 'mysterious'
@@ -50,7 +50,7 @@ def calculate_lucky_number(name):
 
 def main():
     print("\n" + "="*50)
-    print_magic("    🔮 THE COOL FORTUNE TELLER 🔮", 'purple')
+    print_magic("    *** THE COOL FORTUNE TELLER ***", 'purple')
     print("="*50 + "\n")
     
     name = input("What's your name, seeker? ").strip()
@@ -60,8 +60,8 @@ def main():
     mood = get_user_mood()
     lucky_num = calculate_lucky_number(name)
     
-    print_magic(f"\n✨ Welcome, {name}! Your vibe is {mood} today...", 'cyan')
-    print_magic(f"🍀 Your lucky number: {lucky_num}", 'green')
+    print_magic(f"\n*** Welcome, {name}! Your vibe is {mood} today...", 'cyan')
+    print_magic(f"*** Your lucky number: {lucky_num}", 'green')
     
     fortunes = {
         'happy': [
