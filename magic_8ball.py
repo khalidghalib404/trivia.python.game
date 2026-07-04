@@ -21,7 +21,7 @@ def magic_8ball():
             break
         if question:
             print("\n🌀 Shaking...", end="")
-            for _ in range(3):
+            for _ in range(4):
                 print(".", end="", flush=True)
                 import time; time.sleep(0.3)
             print()
