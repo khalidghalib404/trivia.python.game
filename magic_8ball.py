@@ -11,7 +11,7 @@ def magic_8ball():
     ]
     
     print("\n" + "="*45)
-    print("    🎱 MAGIC 8-BALL 🎱")
+    print("    🎱MAGIC 8-BALL🎱")
     print("="*40)
     
     while True:
